@@ -23,7 +23,7 @@ public class Verdulerias implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String verdulerias;
+    private String verdulerias_local;
 
     public long getId() {
         return id;
@@ -33,11 +33,13 @@ public class Verdulerias implements Serializable {
         this.id = id;
     }
 
-    public String getVerdulerias() {
-        return verdulerias;
+    public String getVerdulerias_local() {
+        return verdulerias_local;
     }
 
-    public void setVerdulerias(String verdulerias) {
-        this.verdulerias = verdulerias;
+    public void setVerdulerias_local(String verdulerias_local) {
+        this.verdulerias_local = verdulerias_local;
     }
+
+
 }

@@ -25,12 +25,12 @@ public class Verduras implements Serializable {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private long id; 
     private String nombre;
-    private int cantidad;
-    private double precio;
+    private String cantidad;
+    private String precio;
     
     @ManyToOne
     @JoinColumn(name="verdulerias_id")
-    private Verdulerias verdulerias;
+    private Verdulerias verdulerias_local;
 
     public long getId() {
         return id;
@@ -48,29 +48,30 @@ public class Verduras implements Serializable {
         this.nombre = nombre;
     }
 
-    public int getCantidad() {
+    public String getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
 
-    public double getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 
-    public Verdulerias getVerdulerias() {
-        return verdulerias;
+    public Verdulerias getVerdulerias_local() {
+        return verdulerias_local;
     }
 
-    public void setVerdulerias(Verdulerias verdulerias) {
-        this.verdulerias = verdulerias;
+    public void setVerdulerias_local(Verdulerias verdulerias_local) {
+        this.verdulerias_local = verdulerias_local;
     }
+
 
     
      }
