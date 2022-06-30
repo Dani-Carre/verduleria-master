@@ -42,7 +42,7 @@ public class VerdurasController {
     @GetMapping("/verdurasN")
     public String crearVerduras (Model model){
         List<Verdulerias> listaVerdulerias = verduleriasService.ListVerdulerias();
-        model.addAttribute("verduras",new VerdurasController());
+        model.addAttribute("verduras",new Verduras());
         model.addAttribute("verdulerias",listaVerdulerias);
         return "crear";
     }
